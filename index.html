@@ -29,7 +29,7 @@
             <li><a href="#products">Products</a></li>
             <li><a href="#about">About Us</a></li>
             <li><a href="#locations">Locations</a></li>
-            <li><a href="#modal" class="btn">Order now</a></li>
+            <li><a href="javascript" class="btn">Order now</a></li>
           </ul>
           <button class="close">
             <span></span>
@@ -51,9 +51,9 @@
 </section>
   
 <main>
-  <section class="products">
+  <section class="products" id="products">
     <div class="container">
-      <div class="title text-center">
+      <div class="title text-center clearfix">
         <h3><span>Products</span></h3>
       </div>
       <ul class="unstyle-list">
@@ -61,58 +61,138 @@
         <li><img src="img/delicious.png"></li>
         <li><img src="img/natural.png"></li>
       </ul>
-      <div class="tarts">
+
+      <div class="product">
         <div class="img_tarts">
           <img src="img/tart.png" alt="Tart picture">
         </div>
-        <div class="text_tarts">
+        <div class="text_p">
           <h4>Tarts</h4>
           <p>Everyone loves a little, or sometimes large, sweet thing now and again, that's where we come in! Try our delectable, delicious, dreamy tarts by the slice, or order a whole one for any special occasion</p>
-          <div class="arrow">
+         <div class="arrow first_arrow">
           <img src="img/arrow1.png" alt="arrow">
-          </div>
+         </div>
         </div>
       </div>
-       <div class="cupcakes">
+       <div class="product">
         <div class="img_cupcake">
           <img src="img/cupcake.png" alt="Cupcake picture">
+        </div>
+        <div class="text_p">
           <h4>Cupcakes</h4>
           <p>Our cupcake are not just baked goods, but artistic, customized creations that you won’t find anywhere else. <br>All of our cupcakes are made from scratch with love, using local & premium ingredients. Each cupcake is specially prepared by our lovely bakers, each with its own individual flair</p>
-          <div class="arrow">
-          <img src="img/arrow2.png" alt="arrow">
+          <div class="arrow second_arrow">
+            <img src="img/arrow2.png" alt="arrow">
           </div>
         </div>
       </div>
-       <div class="cakes">
+       <div class="product">
         <div class="img_cake">
           <img src="img/cake.png" alt="Cake picture">
         </div>
-        <h4>Cakes</h4>
-          <p>The uniqueness of our cakes lies in the guarantee that each and every cake from our bakery is passionately hand-made and packed full with the best quality premium ingredients. <br>
-          All cakes are made using traditional baking methods with the emphasis on making a consistent product, ensuring that every cake is as good as the last.</p>
-          <div class="arrow">
-          <img src="img/arrow3.png" alt="arrow">
+        <div class="text_p">
+         <h4>Cakes</h4>
+         <p>The uniqueness of our cakes lies in the guarantee that each and every cake from our bakery is passionately hand-made and packed full with the best quality premium ingredients. <br>
+         All cakes are made using traditional baking methods with the emphasis on making a consistent product, ensuring that every cake is as good as the last.</p>
+          <div class="arrow third_arrow">
+           <img src="img/arrow3.png" alt="arrow">
           </div>
+        </div>
       </div> 
-      <div class="macarons">
+      <div class="product">
         <div class="img_macarons">
           <img src="img/macaroons.png" alt="Macarons picture">
         </div>
+        <div class="text_p">
          <h4>Macarons</h4>
           <p>You’ve never tasted anything like a macaron, until you’ve bitten into one.  There’s truly nothing like it.  With a light crunch on the outside, followed by a soft, melt-in-your-mouth, flavor-filled interior, macarons are unexpected - in the best way.  You definitely won’t forget your first macaron</p>
-          <div class="arrow">
-          <img src="img/arrow4.png" alt="arrow">
+          <div class="arrow forth_arrow">
+           <img src="img/arrow4.png" alt="arrow">
           </div>
-      </div>
-    </div>
+        </div>
+     </div>
   </section>
 
-  <section class="about_us">
+  <section class="about_us" id="about">
+    <div class="about_box">
+      <div class="title text-center">
+        <h3><span>About us</span></h3>
+      </div>
+      <p>The Cake Shop was founded by a team of passionate and dedicated bakers who are committed in baking the most delicious cakes and pastries. <br>
+
+      Using only the freshest ingredients we can find, you can be sure that you are served the best quality cake possible. <br><br>
+      From the beginning we have chosen to work with local farmers, jam makers and beekeepers, because we believe local, quality ingredients are what set our food apart. <br>
+
+      We are always striving to become even better bakers. We love what we do, and hope that comes through in every buttery, flaky bite.</p>
+    </div>
   </section>
   
-  <section class="locations"> 
+  <section class="locations container" id="locations"> 
+    <div class="title text-center">
+      <h3><span>Locations</span></h3>
+    </div>
+    <ul class="unstyle-list clearfix">
+      <li>
+        <div class="location text-center">
+          <img src="img/location_1.png" alt="Location 1"> 
+          <h4>Boston</h4> 
+          <p>200-299 Faneuil Hall Marketplace
+          Boston, MA 02109 <br>
+          Tel.: 617.904.1100
+          <br><strong>Store Hours:</strong>
+          Mon-Fri: 10am-7pm Sat-Sun: 10am-9pm</p> 
+        </div>
+      </li>
+      <li>
+        <div class="location text-center">
+          <img src="img/location_2.png" alt="Location 2"> 
+          <h4>Chicago</h4> 
+          <p>108 N. State Street at Block 37
+          Chicago, IL<br>
+          Tel.: 312.346.7777
+          <br><strong>Store Hours:</strong>
+          Mon-Fri: 10am-7pm Sat-Sun: 10am-9pm</p> 
+        </div>
+      </li>
+      <li>
+        <div class="location text-center">
+          <img src="img/location_3.png" alt="Location 3"> 
+          <h4>Los Angeles</h4> 
+          <p>389 West 3rd Street at Orlando St.
+          Los Angeles, CA<br>
+          Tel.: 323.951.0636
+
+          <br><strong>Store Hours:</strong>
+          Mon-Fri: 10am-7pm Sat-Sun: 10am-9pm</p> 
+        </div>
+      </li>
+      <li>
+        <div class="location text-center">
+          <img src="img/location_4.png" alt="Location 4"> 
+          <h4>New York</h4> 
+          <p>200 Columbus Avenue at 69th Street
+          New York, NY<br>
+          Tel.: 212.724.8101
+          <br><strong>Store Hours:</strong>
+          Mon-Fri: 10am-7pm Sat-Sun: 10am-9pm</p> 
+        </div>
+      </li>
+      </ul>
+       <a href="#modal" class="footer_btn btn">Order now</a>
   </section>
-</main>
+  </main>
+
+<footer class="footer">
+  <div class="container">
+  <a href="index.html" class="footer-logo"><img src="img/logo.png" alt="Cake shop logo"></a>
+  <ul class="unstyle-list">
+    <li><a href="https://www.facebook.com"><img src="img/facebook.png"></a></li>
+    <li><a href="https://www.instagram.com"><img src="img/instagram.png"></a></li>
+    <li><a href="https://www.pinterest.com"><img src="img/pinterest.png"></a></li>
+    <li><a href="https://tripadvisor.com"><img src="img/tripadvisor.png"></a></li>
+  </ul>
+</div>
+</footer>
 
   <script src="js/vendor/modernizr-3.6.0.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>

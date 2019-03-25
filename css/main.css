@@ -162,10 +162,9 @@ hr {
 .first {
     height:560px;
     background-image: url('../img/c1.png');
+    background-color: rgba(46, 65, 61, 0.68);
     background-position: 40% 45%;
-    /*background-color: rgb(158, 207, 198);
-    opacity: 0.6*/
-
+    background-blend-mode: overlay;
 }
 
 .header-logo{
@@ -174,8 +173,8 @@ hr {
 
 .container {
     max-width: 1300px;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
     margin: 0 auto;
 }
 .hero {
@@ -198,15 +197,10 @@ hr {
     background: #0d004c;
     padding: 6px 27px;
 }
-.btn-tab {
-    background-color: transparent;
-    border: 2px solid #0d004c;
+.btn:hover {
+    background-color: #07002b;
 }
-.btn-tab:hover,
-.btn-tab.active {
-    background-color: #0d004c;
-    color: #fff;
-}
+
 ul {
     list-style: none;
 }
@@ -303,12 +297,22 @@ nav .close span:nth-child(2) {
 /* ======== PRODUCTS======*/
 
 .products{
-    background-color: white;
+    background-color: #ebebeb;
+    padding-bottom: 30px;
 }
+
+.products ul{
+    padding-top: 25px;
+padding-bottom: 40px;
+}
+
 .products li{
-        width: 30%;
-        display: inline-block;
-        }
+    width: 32%;
+    display: inline-block;
+    padding-right: 2px;
+    padding-left: 2px
+
+    }
 
 .title h3 {
     position: relative;
@@ -340,30 +344,171 @@ nav .close span:nth-child(2) {
     width: 30%;
 }
 
+ .arrow{
+    display: none;
+    }
+/* ======== PRODUCTS END ========== */
+/* ======== ABOUT US======*/
+.about_us{
+    background-image: url('../img/about.png');
+}
+
+.about_box {
+    height: 100%;
+    width: 100%;
+    padding: 15px;
+    margin: auto;
+    background-color: #ffff;
+    opacity: 0.65;
+}
+
+.about_box p {
+  padding: 0px 25px 10px;
+}
+   /* ======== LOCATIONS ========== */
+    .locations li{
+        padding-top: 20px;
+        padding-bottom: 20px;
+        display: block;
+    }
+
+    .footer_btn {
+        display: block;
+    width: 140px;
+    text-align: center;
+    margin: 0 auto;
+    position: relative;
+    bottom: -16px;
+    }
+    /* ======== LOCATIONS END ========== */
+    
+    /*======= FOOTER ========== */
+
+    .footer {
+        background-color: #754c24;
+        padding-top: 10px;
+        padding-bottom:10px;
+    }
+
+     .footer-logo {
+        display: inline-block;
+        max-width: 60px;
+    }
+
+    .footer ul {
+        float: right;
+    }
+
+    .footer li {
+        display: inline-block;
+        padding-top: 10px;
+        padding-right: 8px;
+        max-width: 35px;
+    }
+    /* ======== FOOTER END ========== */
+
+
 @media only screen and (min-width: 768px) {
    
-    /* ======== MENU ========== */
-    
-    
-    /* ======== ABOUT END ========== */
-
-    /* ======== INTERIOR ========== */
-    .interior li {
-        width: calc(33.333% - 3px); 
-        padding-bottom: 18.75%; /* 9/16x33.333 because we have 3 columns */
-        margin-right: 3px;
-        margin-bottom: 3px;
-    }
-    .interior li.height__2 {
-        padding-bottom: calc(37.5% + 3px); /* 9/16x66.666 = 37.5 because picture is spreading in 2 rows */
+    h3{
+        font-size: 3em;
     }
 
+    h4 {
+    font-size: 2.5em;
+    }
+   /* ======== HEADER ========== */
+    .hero {
+    width:50%;
+    float: right;
+    padding-left: 0;
+    padding-right: 100px;
+    padding-top: 50px;
+    text-align: left;
+    }
+    .first{
+        background-blend-mode:normal;
+    }
+  /* ======== PRODUCTS ========== */
+     .products ul{
+    margin-left: 25px;
+    margin-right: 25px;
+    }
+
+
+    .products li{
+        width: 33%;
+        display: inline-block;
+        padding-right: 20px;
+        padding-left: 20px
+
+    }
+
+    .product{
+        height: 320px;
+    }
+
+    .img_tarts, .img_cake {
+        width: 40%;
+        float: left;
+        display: inline-block;
+    }
+
+    .img_cupcake, .img_macarons{
+        width: 40%;
+        float: right;
+        display: inline-block;
+    }
+    .text_p {
+        width: 60%;
+        display: inline-block;
+    }
+    .arrow{
+        display: none;
+
+    }
+    
+    /* ======== PRODUCTS END========== */
+
+    /* ======== LOCATIONS========== */
+    .locations li{
+    display: block;
+    width: 25%;
+    overflow: hidden;
+    box-sizing: border-box;
+    float: left;
+    padding: 5px;
+    }
+
+    /* ======== LOCATIONS END========== */
+    /* ======== FOOTER ========== */
+
+   
+    /* ======== FOOTER END ========== */
+  
 }
 @media only screen and (min-width: 1024px) {
    
    h3{
-        font-size: 6em;
+        font-size: 5em;
     }
+    
+    h2 {
+    font-weight: 700;
+    font-size: 5em;
+        }
+
+h4 {
+    font-size: 3em;
+    }
+h5 {
+    font-weight: 700;
+    margin: 0;
+}
+p,h5 {
+    font-size: 1.8em;
+    line-height: 30px;
+}
 
     section {
         padding-top: 40px;
@@ -375,7 +520,8 @@ nav .close span:nth-child(2) {
         height: 700px;
         padding-left: 0;
         padding-right: 0;
-        padding-top: 0
+        padding-top: 0;
+        
     }
     header {
         padding: 25px 0 10px;
@@ -409,10 +555,12 @@ nav .close span:nth-child(2) {
         color: #fff;
         background: #0d004c;
     }
+
     .burger,
     nav .close {
         display: none;
     }
+
     .hero {
     width:45%;
     float: right;
@@ -420,37 +568,92 @@ nav .close span:nth-child(2) {
     padding-right: 200px;
     padding-top: 55px;
     text-align: left;
-}
+    }
     /* ======== HEADER END ========== */
 
     /* ======== PRODUCTS ========== */
+    .products{
+        padding-top: 100px;
+    }
+    .products ul{
+    margin-left: 50px;
+    margin-right: 50px;
+    padding-top: 50px;
+    padding-bottom: 100px;
+}
+
 
     .products li{
-        width: 30%;
+        width: 33%;
         display: inline-block;
-        padding-right: 200px;
+        padding-right: 100px;
+        padding-left: 100px
 
     }
-    .tarts, .cupcakes, .cakes, .macarons{
+    
+    .product{
         height: 400px;
         padding-left:100px;
         padding-right: 100px;
+        margin-bottom: 50px;
     }
     .img_tarts, .img_cake{
-        width: 30%;
+        width: 40%;
         float: left;
+        display: inline-block;
+        padding-right: 20px;
     }
 
     .img_cupcake, .img_macarons{
-        width: 30%;
+        width: 40%;
         float: right;
+        display: inline-block;
+        padding-left: 20px;
     }
-    .arrow{
+    .text_p {
+        position: relative;
+        width: 60%;
+        display: inline-block;
+    }
+    .arrow {
+        display: block;
         max-width: 340px;
+        position: absolute;
     }
-    }
-    /* ======== PRODUCTS END========== */
 
+    .first_arrow {
+        left: -60px;
+    }
+
+    .second_arrow {
+        right: -60px;
+        bottom: -100px;
+    }
+    .third_arrow {
+        left: 0px;
+    }
+    .forth_arrow {
+        right: -60px;
+    }
+
+
+    /*}*/
+    /* ======== PRODUCTS END========== */
+    /* ======== ABOUT========== */
+    .about_box {
+        height: 80%;
+        width: 80%;
+    }
+
+    .about_box p{
+        columns: 2;
+        column-gap: 60px;
+        padding: 0px 70px 30px;
+    }
+    /* ======== ABOUT END========== */
+    /* ======== LOCATIONS========== */
+    
+    /* ======== LOCATIONS END========== */
 }
 
 
